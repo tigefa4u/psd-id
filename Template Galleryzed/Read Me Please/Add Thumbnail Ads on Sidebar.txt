@@ -1,0 +1,19 @@
+How to adding thumbnail ads on sidebar? 
+You can adding thumbnail ads on sidebar with easy step please follow step bellow!
+
+- Go to Page Element > 
+- Click Add Gadget > 
+- Select HTML/Javascript > 
+- And enter your Ads code on the form 
+- Save your work 
+
+Example ads Code :
+
+<a href='/' target="_blank"><img src="http://envato.s3.amazonaws.com/referrer_adverts/tutorials_125x125_v1.gif" /></a>
+
+<a href='/' target="_blank"><img src="http://envato.s3.amazonaws.com/referrer_adverts/tf_125x125_v5.gif" /></a>
+ 
+<a href='/' target="_blank"><img src="http://envato.s3.amazonaws.com/referrer_adverts/gr_125x125_v1.gif" /></a>
+
+<a href='/' target="_blank"><img src="http://envato.s3.amazonaws.com/referrer_adverts/cc_125x125_v1.gif" /></a>
+                

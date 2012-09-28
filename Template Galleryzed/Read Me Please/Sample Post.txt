@@ -1,0 +1,26 @@
+This post template for your template, please use this post template...!
+
+----Add Images Auto resize on single post--------
+<img class="latest_img" src="http://IMAGE-URL-HERE/" />
+
+----DEMO & DOWNLOAD BUTTON--------
+<ul class="tombolposting">
+<li><a class="demo" href="http://www.URL-DEMO-HERE.com/" rel="nofollow" target="_blank">Live Demo</a> </li>
+<li><a class="download" href="http://www.URL-DOWNLOAD-HERE.com/" rel="nofollow" target="_blank">Download Theme</a></li>
+</ul>
+
+----Posting Template Details--------
+<div class="Table-Post">
+<table cellpadding="0" cellspacing="0" class="Table-Post2" height="152" id="AutoNumber1"><tbody>
+<tr>     <td class="Table-Post2" colspan="2" height="20" width="76%"><div style="line-height: 20px; padding-bottom: 5px;">
+<span style="font-size: small;"><b>TEMPLATE INFORMATIONS</b></span></div>
+</td> </tr>
+<tr><td class="Table-Post2" height="25" width="20%">Platform Type</td> <td class="Table-Post2" height="25" width="56%">Template Type Here</td></tr>
+<tr><td class="Table-Post2" height="25" width="20%">Template Name</td>      <td class="Table-Post2" height="25" width="56%">Template Name Here</td></tr>
+<tr><td class="Table-Post2" height="25" width="20%">Instructions</td> <td class="Table-Post2" height="25" width="56%">Template Settings Link Here</td></tr>
+<tr><td class="Table-Post2" height="25" width="20%">Author name</td>    <td class="Table-Post2" height="25" width="56%">Author Name Here</td></tr>
+<tr><td class="Table-Post2" height="25" width="20%">Designer URL</td>    <td class="Table-Post2" height="25" width="56%">Designer Link Here</td></tr>
+<tr><td class="Table-Post2" height="25" width="20%"><span class="cut">Added</span></td> <td class="Table-Post2" height="25" width="56%">Time Added Here</td></tr>
+<tr><td class="Table-Post2" height="25" width="20%">&nbsp;<span class="cut">Descriptions</span></td> <td class="Table-Post2" height="25" width="56%">Template descriptions Here</td></tr>
+</tbody></table>
+</div>

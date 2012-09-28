@@ -1,0 +1,12 @@
+This template set for auto added label Icon on every post. 
+
+  How to use this feature?
+
+- If you post about blogger template, added a label with name "Blogger" on every post for Blogger template.
+
+- If you post about wordpress theme, added a label with name "Wordpress" on every post for Wordpress theme.
+
+- If you post about joomla template, added a label with name "Joomla" on every post for Joomla template.
+
+
+All Label name must starting with uppercase font. Example "Blogger" no "blogger" . "Wordpress" no "wordpress" .

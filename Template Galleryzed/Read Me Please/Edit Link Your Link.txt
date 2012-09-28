@@ -1,0 +1,28 @@
+Login to Blogger > Select Blog > Design > Go to Edit HTML > Expand Widget Templates.
+
+1. Change Link on Navigation Menu 2. Use CTRL + F to Find this code :
+
+ <div id='nav'>
+<ul>
+	<li><a class='home' expr:href='data:blog.homepageUrl' title='Home'>Home</a></li>
+	<li><a href='#'>Contact us</a></li>
+	<li><a href='#'>Blogger</a></li>
+	<li><a href='#'>Wordpress</a></li>
+	<li><a href='#'>Joomla</a></li>
+	<li><a href='#'>Advertise</a></li>
+	<li><a href='#'>Submit</a></li>
+</ul>
+</div>
+
+And Change "#" with your link URL.
+
+
+2. Change Link on Footer-Left . Use CTRL + F to Find this code :
+
+        <div style='float:left;'>
+<a expr:href='data:blog.homepageUrl' expr:title='data:blog.title'>Home</a> | <a href='#'>Blog</a> | <a href='#'>Contact Us</a> | <a href='#'>Policyprivacy</a> | <a href='#'>Term of service</a> | <a href='#'>Submit Template</a> <br/>
+
+And Change "#" with your link URL.
+
+
+Save Your Template!

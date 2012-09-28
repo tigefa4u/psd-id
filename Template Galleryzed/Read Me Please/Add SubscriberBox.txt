@@ -1,0 +1,30 @@
+Subscriber BOX
+
+
+2. Go to ke Page Element >> Add Gadget
+3. Select HTML/Javascript
+4. Now insert code bellow
+
+
+<div id="feedburner-bg">
+   <div id='feedburner'>
+   <form action="http://feedburner.google.com/fb/a/mailverify" style="border:0px solid #ccc;padding:0px;" target="popupwindow" method="post" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=templatemaxs', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input value="en_US" name="loc" type="hidden" /><input value="templatemaxs" name="uri" type="hidden" />
+   <input onblur="if (this.value == &quot;&quot;) {this.value = &quot;put your mail here..&quot;;}" onfocus="if (this.value == &quot;put your mail here..&quot;) {this.value = &quot;&quot;}" type="text" id="feed-s" name="email" size="20" type="text" value="put your mail here.." />
+   <input src="http://4.bp.blogspot.com/-BEo50gveRfI/To4jkGrzzSI/AAAAAAAABZM/9X3l_jMZMag/s1600/feedbutton.gif" style="border: 0pt none ; vertical-align: top; padding-top:1px" type="image" width="20" height="20" />
+   </form>
+   </div></div>
+
+<div style="float:left; padding-top:10px;">
+<a href="http://feeds.feedburner.com/templatemaxs"><img src="http://feeds.feedburner.com/~fc/templatemaxs?bg=cccccc&amp;fg=000000&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+</div>
+
+   <div style="float:right; padding-left:0px; padding-top:10px" margin:0 2px> 
+   <a target="_blank" rel="nofollow" href="http://feeds2.feedburner.com/templatemaxs">
+   <img border="0" alt="" width="16" src="https://lh4.googleusercontent.com/_63wLUMEe0os/TVbm5wh6IBI/AAAAAAAAAU0/lz_2Qrs9reA/feed.png" height="16" /></a>
+   <a target="_blank" rel="nofollow" href="http://twitter.com/templatemaxs">
+   <img border="0" alt="" width="16" src="https://lh3.googleusercontent.com/_63wLUMEe0os/TVbm5hs-SOI/AAAAAAAAAUw/g7yGJk-D3rc/twitter.png" height="16" /></a>
+   <a target="_blank" rel="nofollow" href="http://www.facebook.com/pages/Templatemaxscom/115692038493808">
+   <img border="0" alt="" width="16" src="https://lh6.googleusercontent.com/_63wLUMEe0os/TVbm52KMYAI/AAAAAAAAAU4/xcEZpHDbcBQ/facebook.png" height="16" /></a>
+   </div>
+
+5, Dont forget to change your Social ID And save your gadget.

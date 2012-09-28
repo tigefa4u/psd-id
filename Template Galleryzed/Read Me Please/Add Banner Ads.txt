@@ -1,0 +1,11 @@
+Add your Banner ads :
+
+Go to Layout – Edit HTML – click expand widget template
+Find and change this code with your ads code :
+
+1. Banner Ads On Header and Single Post Bottom
+
+<!-- Your Banner Ads Here -->
+<img src='http://3.bp.blogspot.com/-AhfuWRJ53PU/TlOhp30P1eI/AAAAAAAAA5Y/kdrTuBw2Zag/s1600/banner.png'/>
+
+Dont forget to save your change.

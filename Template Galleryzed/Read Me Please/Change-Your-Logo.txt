@@ -1,0 +1,9 @@
+Change your Logo :
+
+Go to Layout – Edit HTML – no need to expand widget template
+Find and change this image address with your logo adress:
+
+http://2.bp.blogspot.com/-zOWyZVGrezU/Tosw0sE-tzI/AAAAAAAAA6I/CM9WfjcCNcU/s1600/galleryzed-logo.png
+
+The logo use image file. The size is 250 pixels width and 65 pixels height.
+Please make customization in photoshop image editor. After you make your own logo, Upload it into webhosting or blogger and get the link image address.
