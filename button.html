@@ -1,0 +1,872 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- ------------------------------------------------------------------------ -->
+<!-- Thank you for purchasing this item. This Item is created by Roodper.     -->
+<!-- Feel free to contact me through : roodper@hotmail.com                    -->
+<!-- My Twitter : twitter/#!/Roodper                                          -->
+<!-- My Facebook page : http://www.facebook.com/pages/Roodper/192238767479268 -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- http://codecanyon.net/user/roodper  ---  ---- --- --- -- --------------- -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fancy Button Builder CSS3</title>
+
+<script type="text/javascript" src="required/jquery.js"></script>
+<script type="text/javascript" src="required/jquery.slider.js"></script> 
+<script type="text/javascript" src="required/jquery.dependClass.js"></script> 
+
+<script type="text/javascript" src="required/jquery.miniColors.js"></script>
+<link rel="stylesheet" href="required/jquery.miniColors.css" />
+
+	<link rel="stylesheet" href="required/jslider.css" type="text/css"> 
+	<link rel="stylesheet" href="required/jslider.plastic.css" type="text/css"> 
+	<link rel="stylesheet" href="required/jslider.round.plastic.css" type="text/css"> 
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="required/jslider.ie6.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="required/jslider.plastic.ie6.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="required/jslider.round.plastic.ie6.css" type="text/css" media="screen">
+	<![endif]--> 
+
+<style  type="text/css">
+
+@charset "UTF-8";
+/* CSS Document */
+body{
+	
+}
+*{
+	margin:0;
+	padding:0;
+}
+#left{
+	position:absolute;
+	left:0;
+	min-width:30%;
+	min-height:100%;
+	z-index:1;
+	border-right: #000 1px solid;
+	font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	background-color:#F5F7F6;
+	background-image: url('required/images/apple_noise.jpg');
+	background-repeat:repeat-x;
+	text-shadow: 0px 0px 4px #ededed;filter: dropshadow(color=#ededed, offx=0, offy=0);
+
+}
+#left_h{
+	position: relative;
+	margin:left;
+	width:100%;
+	height:35px;
+	overflow:hidden;
+	border-bottom: #666 1px solid;
+	border-right:#CCC 1px solid;
+		
+}
+#header_buttons{
+	position:relative;
+	width:100%;
+	height:100%;
+	background: #E8E8E8  ;
+	background-image: -moz-linear-gradient(top, #E8E8E8 0% , #B2B2B2 100%);
+	background-image: -webkit-linear-gradient(top, #E8E8E8 0% ,#B2B2B2 100%);
+	background-image: -o-linear-gradient(top, #E8E8E8 0% ,#B2B2B2 100%);
+	background-image: -ms-linear-gradient(top, #E8E8E8 0% ,#B2B2B2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E8E8E8', endColorstr='#B2B2B2',GradientType=0 );
+	background-image: linear-gradient(top, #E8E8E8 0% ,#B2B2B2 100%);
+	color:#000;
+	
+	text-align:center;
+}
+#header_buttons li{
+	position:relative;
+	list-style-type:none;
+	float:left;
+	cursor:pointer;
+	padding:11px 49px;	
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+
+}
+
+.NO:hover {
+background: #C5CAE0 ;
+color: #FFF;
+}
+.Active{
+background: #75ABE4;
+background-image: -moz-linear-gradient(top, #75ABE4 0%, #4E7FD3 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#75ABE4), color-stop(100%,#4E7FD3));
+background-image: -webkit-linear-gradient(top, #75ABE4 0%, #4E7FD3 100%);
+background-image: -o-linear-gradient(top, #75ABE4 0%, #4E7FD3 100%);
+background-image: -ms-linear-gradient(top, #75ABE4 0% ,#4E7FD3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75ABE4', endColorstr='#4E7FD3',GradientType=0 );
+background-image: linear-gradient(top, #75ABE4 0% ,#4E7FD3 100%);
+color: #FFF;
+}
+
+#right{
+	position: fixed;
+	float:right;
+	right:0;
+	width:70%;
+	height:100%;
+	z-index:0;
+	
+}
+
+#right_c{
+	position:relative;
+	margin:auto;
+	border-bottom:#999 1px solid;
+	top:35%;
+}
+#left_ul{
+	list-style:none;
+}
+.title{
+	position:relative;
+	background: #31373D;
+	display: block;
+	color: #FFF;
+	text-indent:20px;
+	font-size:15px;
+	font-weight:bold;
+	padding:4px;
+	border-bottom:  #666 solid 1px;
+	
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+.title:hover{
+	background-color: #069;
+	color:#FFF;
+	}
+#left_ul label{
+	color: #333334;
+	margin-left:25px;
+}
+#left_ul li{
+	list-style:none;
+	
+}
+#left_ul ol li{
+	
+	margin:20px 0;
+	
+	}
+.button{
+	position:absolute;
+	text-decoration: none;
+	text-align:center;
+	z-index:2;
+}
+#right_c span{
+	margin-left:20px;
+	position:absolute;
+	
+	text-align:center;
+	bottom:-10px;
+	background-color: #FFF;
+	color:#999;
+	z-index:1;
+}
+#grab{
+	width:150px;
+	position:fixed;
+	float:right;
+	right:0;
+	text-align:center;
+	bottom:0;
+	font-size:19px;
+	font-weight:bold;
+	color:white;
+	height:30px;
+	background: #75ABE4;
+background-image: -moz-linear-gradient(top, #75ABE4 0%, #4E7FD3 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#75ABE4), color-stop(100%,#4E7FD3));
+background-image: -webkit-linear-gradient(top, #75ABE4 0%, #4E7FD3 100%);
+background-image: -o-linear-gradient(top, #75ABE4 0%, #4E7FD3 100%);
+background-image: -ms-linear-gradient(top, #75ABE4 0% ,#4E7FD3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75ABE4', endColorstr='#4E7FD3',GradientType=0 );
+background-image: linear-gradient(top, #75ABE4 0% ,#4E7FD3 100%);
+color: #FFF;
+cursor:pointer;
+	}
+#right_b{
+	border-top:#CCC 1px solid;
+	border-bottom:#CCC 1px solid;
+	display:none;
+	position:relative;
+	width:100%;
+	height:300px;
+	float:right;
+	top:34%;
+	background: url('required/images/backgroundTile.png');
+	z-index:3;
+}
+#right_b:after{ /*arrow added to uparrowdiv DIV*/
+content:'';
+display:block;
+position:absolute;
+top:-20px; /*should be set to -border-width x 2 */
+right:49%;
+width:0;
+height:0;
+border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
+border-style: solid ;
+border-width: 10px;
+}
+#right_b ol{
+	position:absolute;
+	display:none;
+	list-style:none;
+	float:left;
+	left:25%;
+}
+#right_b ol label{
+	position:relative;
+	color: #FFF;
+	float:left;
+	margin-right:10px;
+}
+#right_b li{
+	margin:20px;
+}
+#right_b textarea{
+	width:320px;
+	resize:none;}
+
+
+</style>
+    
+</head>
+<body>
+<div id="left">
+    <div id="left_h">
+      <ul id="header_buttons">
+       <li class="Active">Normal</li>
+       <li class="NO" >Hover</li>
+       <li class="NO">Pressed</li></ul>
+    </div>
+    <ul id="left_ul"> 
+     <li> 
+      <abbr class="title">Text</abbr>
+      <ol>
+      <li>
+      <label>Text : </label><input type="text" class="text" value="Preview"/>
+      </li>
+      <li>
+      <label>Special Character : </label>
+     <select id="special_character">
+     <option>none</option>
+     <option>➜</option>
+     <option>➤</option>
+     <option>➣</option>
+     <option>☞</option>
+     <option>↻</option>
+     <option>➹</option>
+     <option>☼</option>
+     <option>♞</option>
+     <option>♛</option>
+     <option>♜</option>
+     <option>☂</option>
+     <option>☻</option>
+     <option>✍</option>
+     <option>✄</option>
+     <option>✐</option>
+     <option>✌</option>
+     <option>✚</option>
+     <option>☯</option>
+     <option>⚒</option>
+     <option>⚖</option>
+     <option>☓</option>
+     <option>✠</option>
+     <option>⦿</option>
+     <option>✺</option>
+     <option>✓</option>
+     <option>✔</option>
+     <option>✖</option>
+     <option>✘</option>
+     <option>❤</option>
+     <option>❂</option>
+     <option>▶</option>
+     <option>◀</option>
+     <option>▼</option>
+     <option>►</option>
+     <option>✩</option>
+     <option>✈</option>
+     <option>✦</option>
+     <option>⚛</option>
+     <option>✝</option>
+     <option>⚑</option>
+     <option>⚐</option>
+     <option>☸</option>
+     </select>
+     </li>
+     </ol>
+     </li>
+    <li>
+     <abbr class="title">Font</abbr>
+     <ol><li>
+     <label>Family Name :</label>
+     <select id="font_name" style="width:160px">
+        <option>Arial, Helvetica, sans-serif</option>
+ 		<option>Verdana, Geneva, sans-serif</option>
+		<option>Georgia, "Times New Roman", Times, serif</option>
+		<option>"Courier New", Courier, monospace</option>
+		<option>Tahoma, Geneva, sans-serif</option>
+		<option>"Trebuchet MS", Arial, Helvetica, sans-serif</option>
+		<option>"Arial Black", Gadget, sans-serif</option>
+		<option>"Times New Roman", Times, serif</option>
+		<option>"Palatino Linotype", "Book Antiqua", Palatino, serif</option>
+		<option>"Lucida Sans Unicode", "Lucida Grande", sans-serif</option>
+		<option>"MS Serif", "New York", serif</option>
+		<option>"Lucida Console", Monaco, monospace</option>
+     </select>
+     </li>
+     <li>
+     <label>Color : </label>
+     <input type="text" id="font_color" size="4" value="#E5FFFF"/>
+     </li>
+     <li>
+     <label>Size : </label>
+     <span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="font_size" type="slider"  value="18" /></span>
+     </li>
+     </ol>
+     </li>
+     <li>
+     <abbr class="title">Font Shadow</abbr>
+       <ol>
+        <li>
+        <label>color : </label><input type="text" id="font_shadow" size="4" value="#bababa"/>
+        </li>
+        <li>
+     <label>X : </label> <span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="font_shadow_x" type="slider"  value="0" /></span>
+        </li>
+        <li>
+     <label>Y : </label> <span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="font_shadow_y" type="slider"  value="0" /></span> 
+        </li>
+        <li>
+     <label>Spread : </label> <span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="font_shadow_spread" type="slider"  value="0" /></span>
+        </li>
+        </ol>
+     </li>
+     <li>
+     <abbr class="title">Padding</abbr>
+     <ol><li>
+     <label>Left/Right :</label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="width" type="slider"  value="32" /></span>
+      </li> 
+      <li>
+    <label>Up/Down :</label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="height" type="slider"  value="11" /></span>
+     </li>
+     </ol>
+     </li>
+    <li>
+    <abbr class="title">Border</abbr>
+    <ol>
+    <li>
+    <label>Size :</label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="border_size" type="slider"  value="1" /></span>
+    </li>
+    <li>
+    <label>Type :</label>
+    <select id="border_style" >
+    <option>solid</option>
+    <option>dashed</option>
+    <option>dotted</option>
+    <option>double</option>
+    <option>groove</option>
+    <option>inset</option>
+    <option>outset</option>
+    <option>ridge</option>
+    <option>none</option>
+    </select>
+   
+    </li>
+    <li>
+    <label>Border Color : </label><input type="text" id="border_color" size="4" value="#004F72"/>
+    </li>
+    <li>
+    <label>border radius : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="border_radius" type="slider"  value="4" /></span> 
+    </li>
+    <li>
+      <table style="position:relative;width:68px; height:30px; border:#000 1px solid; margin-left:22px;">
+      <tr style=""><td><input type="text" size="2" maxlength="2" class="s1" /></td><td style=""><input type="text" size="2"  maxlength="2" class="s2" /></td></tr>
+      <tr style=""><td><input type="text" size="2"  maxlength="2" class="s3"/></td><td style=""><input type="text" size="2"  maxlength="2" class="s4"/></td></tr>
+      </table>
+     </li>
+     </ol>
+     </li>
+    <li>
+    <abbr class="title">Background Color</abbr>
+    <ol>
+    <li>
+    <label>Color : </label><input type="text" id="back_start" size="4" value="#3BA4C7"/>    → <input type="text" id="back_end" size="4" value="#1982A5"/>
+    </li>
+    </ol>
+  	</li>
+    <li>
+    <abbr class="title">Box Inside Shadow </abbr>
+    <ol><li>
+    <label>Color : </label><input type="text" id="in_color" size="4" value="#ffffff"/>
+    </li><li>
+    <label> x : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="in_shadow_x" type="slider"  value="0" /></span></li><li>
+    <label> y : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="in_shadow_y" type="slider"  value="0" /></span></li><li>
+    <label> Blur : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="in_shadow_blur" type="slider"  value="1" /></span>
+    </ol>
+    </li>
+    <li>
+    <abbr class="title">Box Outside Shadow </abbr>
+    <ol><li>
+    <label>Color : </label><input type="text" id="outside_color" size="4" value="#bababa"/>
+    </li><li>
+    <label> x : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="out_shadow_x" type="slider"  value="0" /></span></li><li>
+    <label> y : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="out_shadow_y" type="slider"  value="0" /></span></li><li>
+    <label> Blur : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="out_shadow_blur" type="slider"  value="2" /></span>
+    </ol>
+    </li>
+    <li>
+    <abbr class="title">Opacity</abbr>
+    <ol><li>
+    <label>Opacity : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="opacity" type="slider"  value="100" /></span></li></ol>
+    </li>
+    <li>
+    <abbr class="title">Transition</abbr>
+    <ol>
+    <li>
+    <label>Type : </label>
+<select id="transition_type">
+<option>none</option>
+<option>all</option>
+<option>background</option>
+<option>with</option>
+<option>height</option>
+<option>color</option>
+<option>outline</option>
+</select>
+    </li>
+     <li><label>Function : </label><select id="transition_function"><option>linear</option><option>ease</option><option>ease-in</option><option>ease-out</option><option>ease-in-out</option></select></li>
+    <li><label>Duration : </label><span style="display: inline-block; width: 200px; padding: 0 0 0 40px;"><input id="transition_second" type="slider"  value="0" /></span></li>
+    </ol>
+    </li>
+    </ul>
+</div>
+<div id="right">
+    <div id="right_c">
+    
+	<a href="#"  class="button" />Preview</a>
+    <span></span>
+     
+    </div>
+   <div id="right_b"><ol ><li><label>Html : </label><textarea></textarea></li><li><label>CSS : </label><textarea style="height:200px;" ></textarea></li></ol></div>
+   <div id="grab">Grab the code</div>
+</div>
+<script type="text/javascript">
+
+var s=0;
+var text='Preview';
+var special_character='';
+var width=[32];
+var height=[11];
+var border=[''];
+var border_size=[1];
+var border_type=['solid'];
+var border_color=['#004F72'];
+var border_radius=[4];
+var border_radius_style=[''];
+var val1=[4];
+var val2=[4];
+var val3=[4];
+var val4=[4];
+var font_color=['#E5FFFF'];
+var font_size=[13];
+var font_name=['Arial, Helvetica, sans-serif'];
+var background=[];
+var back_start=['#3BA4C7'];
+var back_end=['#1982A5'];
+var box_shadow_out=[];
+var outside_color=['#bababa'];
+var out_shadow_x=[0];
+var out_shadow_y=[0];
+var out_shadow_blur=[0];
+var in_color=['#ffffff'];
+var in_shadow_x=[0];
+var in_shadow_y=[0];
+var in_shadow_blur=[1];
+var opacity=[100];
+var opacity_style=[];
+var text_shadow=[];
+var font_shadow=['#bababa'];
+var font_shadow_x=[0];
+var font_shadow_y=[0];
+var font_shadow_spread=[0];
+var transition_style='';
+var transition_second=0;
+var transition_type='none';
+var transition_function='linear';
+var style=[];
+var hover=0;
+var press=0;
+var grab=0;
+$(document).ready(function(){
+	
+	
+	
+	$(".button").click(function(event) {
+	  event.preventDefault();
+	});
+	
+	//Title //
+	$('.title').click(function(){ $(this).parent().find('ol').slideToggle();});
+	//top header //
+	$('#header_buttons li').click(function(){ $('#header_buttons li').removeClass().addClass('NO');  $(this).removeClass().addClass('Active');  });
+	
+	//change the title
+	$('.text').live('keyup',function(){ text=$(this).attr('value');$('.button').html(text+special_character); changes();}); // remember to change this little function in menu maker as well
+	
+	//sliders 
+	slides('width',0,100);
+	slides('height',0,100);
+	slides('border_size',0,50);
+	slides('border_radius',0,50);
+	slides('font_size',0,50);
+	slides('out_shadow_x',-20,20);
+	slides('out_shadow_y',-20,20);
+	slides('out_shadow_blur',-20,20);
+	slides('in_shadow_x',-20,20);
+	slides('in_shadow_y',-20,20);
+	slides('in_shadow_blur',-20,20);
+	slides('opacity',0,100);
+	slides('font_shadow_x',-20,20);
+	slides('font_shadow_y',-20,20);
+	slides('font_shadow_spread',0,20);
+	$('#transition_second').slider({ from: 0, to: 1, step: .01,round:2, dimension: '&nbsp;s', skin: "plastic" ,onstatechange: function( value ){transition_second=value; changes();}});
+	//colors 
+	color('font_color');
+    color('border_color');
+	color('back_start');
+ 	color('back_end');
+	color('outside_color');
+	color('in_color');
+	color('font_shadow');
+    // selection changes
+	$('#border_style').live('change',function(){
+		border_type[s]=$(this).val(); 
+		if(border_type[s]=='none')$('#border_size').slider('value',0);
+		changes();
+		});
+	$('#font_name').live('change',function(){
+		font_name[s]=$(this).val(); changes();
+	});
+	$('#special_character').live('change',function(){
+		special_character='&nbsp;'+$(this).val();
+		if(special_character=='&nbsp;none')special_character='';
+		 $('.button').html(text+special_character);
+		 changes();
+	});
+	$('#transition_type').live('change',function(){
+		transition_type=$(this).val(); changes();
+	});
+	$('#transition_function').live('change',function(){
+		transition_function=$(this).val(); changes();
+	});
+	// change each side of border
+	$('.s1,.s2,.s3,.s4').live('keyup',function(){
+		 val1[s]=$('.s1').val();
+		 val2[s]=$('.s2').val();
+		 val3[s]=$('.s3').val();
+		 val4[s]=$('.s4').val();
+					changes();
+					return false;
+	});
+	// Header statues click normal , hover and pressed
+	$('#header_buttons li').eq(0).click(function(){
+		$('#left_ul li').eq(0).slideDown('fast');
+		s=0;
+		make_slide_color_change();
+	});
+ 	$('#header_buttons li').eq(1).click(function(){
+		$('#left_ul li').eq(0).slideUp('fast');
+		s=1;
+		if(hover==0){make_changes_transfer(1);}
+		hover=1;
+		make_slide_color_change();
+		//----auto change the button to normal
+		//====================================
+	});
+	//--------------------------------------
+	$('#header_buttons li').eq(2).click(function(){
+		$('#left_ul li').eq(0).slideUp('fast');
+		s=2;
+		if(hover==0)make_changes_transfer(1);
+		if(press==0)make_changes_transfer(2);
+		press=1;
+		make_slide_color_change();
+		//====================================
+	});
+	
+	
+	// testing preview when cursor moves to right side
+	$('#right').hover(function(){
+			$('#right_c').css('border','none'); 
+			$('#right_c span').hide(); 
+			$('.button').attr('style',style[0]+transition_style);
+			if(hover==1){
+			
+			
+			$('.button').mouseover(function(){$('.button').attr('style',style[1]+transition_style);  });
+			$('.button').mouseleave(function(){ $('.button').attr('style',style[0]+transition_style);   });
+			
+			}
+			if(press==1){
+			
+			$('.button').mousedown(function(){ $('.button').attr('style',style[2]+transition_style)});
+			$('.button').mouseup(function(){ 
+				if(hover==1)$('.button').attr('style',style[1]+transition_style); 
+				else $('.button').attr('style',style[0]+transition_style); 	
+			   });	
+			}
+	},function(){$('.button').attr('style',style[s]); $('#right_c').css({'border-bottom':'#999 1px solid'}); $('#right_c span').show();});
+	
+	//get the source code	
+	$('#grab').live('click',function(){
+		if(grab==0){grab=1;
+		$('#right_b li').eq(0).find('textarea').text('<a href="#" class="button"/>'+text+special_character+'</a>');
+		var outcss = '.button{\n text-decoration:none; \n text-align:center; '+style[0]+' '+transition_style+'}';
+		if(hover==1 && press==0)outcss = '.button{text-decoration:none; text-align:center; '+style[0]+' '+transition_style+'}.button:hover{'+style[1]+'}';
+		if(hover==0 && press==1)outcss = '.button{text-decoration:none; text-align:center; '+style[0]+' '+transition_style+'}.button:active{'+style[2]+'}';
+		if(hover==1 && press==1)outcss = '.button{text-decoration:none; text-align:center; '+style[0]+' '+transition_style+'}.button:hover{'+style[1]+'}.button:active{'+style[2]+'}';
+		
+		
+		$('#right_b li').eq(1).find('textarea').text(outcss);
+		$('#right_b').slideDown(function(){$('#right_b ol').fadeIn('fast');});
+		}else changes();
+	});
+});
+
+// function are below ///
+function changes(){
+// remove grab ----
+if(grab==1){
+	grab=0;
+	$('#right_b ol').hide();
+		$('#right_b').fadeOut('fast');	
+}
+//-----------------
+// STYLE == BORDER
+if(border_size[s]==0 ){
+	border_type[s]='none'; 
+	$('#border_style').attr('value','none');  
+	border[s]='none'; 
+}else{
+	 border[s]=border_type[s]+' '+border_size[s]+'px '+border_color[s];
+}
+if(border_type[s]=='none'){
+border[s]='none';
+}
+//===== STYLE= Radius===
+if(val1[s]==val2[s] && val2[s]==val3[s] && val3[s]==val4[s]){
+	$('.s1,.s2,.s3,.s4').val(border_radius[s]);  
+		if(border_radius[s]==0)border_radius_style[s]='';
+		else{border_radius_style[s]='-webkit-border-radius:'+border_radius[s]+'px;\n -moz-border-radius:'+border_radius[s]+'px; \n border-radius: '+border_radius[s]+'px;';
+		} 
+}else{
+ border_radius_style[s]='-webkit-border-radius:'+val1[s]+'px '+val2[s]+'px '+val4[s]+'px '+val3[s]+'px; \
+	 				 border-radius: '+val1[s]+'px '+val2[s]+'px '+val4[s]+'px '+val3[s]+'px; \
+					-moz-border-radius-topleft:'+val1[s]+'px; \
+					-moz-border-radius-topright:'+val2[s]+'px; \
+					-moz-border-radius-bottomleft:'+val3[s]+'px; \
+					-moz-border-radius-bottomright:'+val4[s]+'px; ';
+}
+//\\=====================================
+//============================================
+// STYLE == FONT SHADOW
+  if(font_shadow_x[s]==0 && font_shadow_y[s]==0 && font_shadow_spread[s]==0)text_shadow[s]='';
+  else{
+  text_shadow[s]='text-shadow: '+font_shadow_x[s]+'px '+font_shadow_y[s]+'px '+font_shadow_spread[s]+'px '+font_shadow[s]+'; \n filter: dropshadow(color='+font_shadow[s]+', offx='+font_shadow_x[s]+', offy='+font_shadow_y[s]+');';}
+//============================================
+// STYLE == BACKGROUND COLOR
+ if(back_start[s]==back_end[s])background[s]='background:'+back_start[s]+';';
+ else{
+	background[s]=
+   'background-color:'+back_start[s]+'; \n \
+background-image: -moz-linear-gradient(top, '+back_start[s]+' 0%, '+back_end[s]+' 100%); \n \
+background-image: -webkit-linear-gradient(top, '+back_start[s]+' 0%, '+back_end[s]+' 100%); \n \
+background-image: -o-linear-gradient(top, '+back_start[s]+' 0%, '+back_end[s]+' 100%); \n \
+background-image: -ms-linear-gradient(top, '+back_start[s]+' 0% ,'+back_end[s]+' 100%); \n \
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=\''+back_end[s]+'\', endColorstr=\''+back_end[s]+'\',GradientType=0 ); \n \
+background-image: linear-gradient(top, '+back_start[s]+' 0% ,'+back_end[s]+' 100%);  '; 
+ }
+//============================================
+// STYLE==OUTSIDE / INSIDE SHADOW
+if(out_shadow_x[s]==0 && out_shadow_y[s]==0 && out_shadow_blur[s]==0 ) {
+	if(in_shadow_x[s]==0 && in_shadow_y[s]==0 && in_shadow_blur[s]==0 ){
+		box_shadow_out[s]='';
+	}else{
+	box_shadow_out[s]=
+'-webkit-box-shadow:inset '+in_shadow_x+'px '+in_shadow_y+'px '+in_shadow_blur+'px '+in_color+';  \
+-moz-box-shadow:inset '+in_shadow_x[s]+'px '+in_shadow_y[s]+'px '+in_shadow_blur[s]+'px '+in_color[s]+';  \
+box-shadow:inset '+in_shadow_x[s]+'px '+in_shadow_y[s]+'px '+in_shadow_blur[s]+'px '+in_color[s]+'; ';	
+	}
+	
+}
+else{
+if(in_shadow_x[s]==0 && in_shadow_y[s]==0 && in_shadow_blur[s]==0 ){
+box_shadow_out[s]=
+'-webkit-box-shadow:'+out_shadow_x[s]+'px '+out_shadow_y[s]+'px '+out_shadow_blur[s]+'px '+outside_color[s]+';  \
+-moz-box-shadow: '+out_shadow_x[s]+'px '+out_shadow_y[s]+'px '+out_shadow_blur[s]+'px '+outside_color[s]+';  \
+box-shadow:'+out_shadow_x[s]+'px '+out_shadow_y[s]+'px '+out_shadow_blur[s]+'px '+outside_color[s]+'; ';
+}
+else{
+box_shadow_out[s]=
+'-webkit-box-shadow:'+out_shadow_x[s]+'px '+out_shadow_y[s]+'px '+out_shadow_blur[s]+'px '+outside_color[s]+', inset '+in_shadow_x[s]+'px '+in_shadow_y[s]+'px '+in_shadow_blur[s]+'px '+in_color[s]+'; \
+\n -moz-box-shadow: '+out_shadow_x[s]+'px '+out_shadow_y[s]+'px '+out_shadow_blur[s]+'px '+outside_color[s]+',  inset '+in_shadow_x[s]+'px '+in_shadow_y[s]+'px '+in_shadow_blur[s]+'px '+in_color[s]+';  \
+\n box-shadow:'+out_shadow_x[s]+'px '+out_shadow_y[s]+'px '+out_shadow_blur[s]+'px '+outside_color[s]+', inset '+in_shadow_x[s]+'px '+in_shadow_y[s]+'px '+in_shadow_blur[s]+'px '+in_color[s]+'; ';	
+}
+}
+//==== STYLE = opacity 
+if(Number(opacity[s])!=100){opacity_style[s]='opacity:'+Number(opacity[s])/100+'; \n -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity='+Number(opacity[s])+'); \n filter: alpha(opacity='+Number(opacity[s])+');';}else opacity_style[s]='';
+//=============================================
+//===== STYLE = Transition ====================
+if((hover==1 || press==1) && transition_type!='none'){
+transition_style=
+' -webkit-transition: '+transition_type+' '+transition_second+'s '+transition_function+';\
+\n -moz-transition:  '+transition_type+' '+transition_second+'s '+transition_function+';\
+\n -o-transition:  '+transition_type+' '+transition_second+'s '+transition_function+';\
+\n transition:  '+transition_type+' '+transition_second+'s '+transition_function+';';
+}else transition_style='';
+
+//=============================================
+style[s] =
+'\n padding:'+height[s]+'px '+width[s]+'px; \
+\n border:'+border[s]+'; \
+\n '+border_radius_style[s]+' \
+\n font:'+font_size[s]+'px '+font_name[s]+'; \
+\n font-weight:bold; \
+\n color:'+font_color[s]+'; \
+\n '+background[s]+' \
+\n '+box_shadow_out[s]+' \
+\n '+opacity_style[s]+' \
+\n '+text_shadow[s]; 
+
+  $('.button').attr('style',style[s]);
+  $('#right_c').width($('.button').outerWidth()).height($('.button').outerHeight()+20);
+  $('#right_c span').html('&nbsp;'+$('.button').outerWidth()+' px&nbsp;').css({'margin-left':Number($('.button').outerWidth())/2-23+'px'});
+}
+//function for making slider --------------------------
+function slides(name,start,end){
+	$('#'+ name).slider({ from: start, to: end, step: 1, dimension: '&nbsp;px', skin: "plastic" ,onstatechange: function( value ){
+	switch (name) {
+		case 'border_size':if(value!=0 && border_type[s]=='none'){border_type[s]='solid'; $('#border_style').attr('value','solid'); } border_size[s]=value; break;
+		case 'width': width[s]=value;  break;
+		case 'height': height[s]=value;  break;
+		case 'border_radius': border_radius[s]=value; val1[s]=val2[s]=val3[s]=val4[s]=border_radius[s]; break;
+		case 'font_size': font_size[s]=value; break;
+		case 'out_shadow_x':out_shadow_x[s]=value; break;
+		case 'out_shadow_y':out_shadow_y[s]=value; break;
+		case 'out_shadow_blur':out_shadow_blur[s]=value; break;
+		case 'in_shadow_x':in_shadow_x[s]=value; break;
+		case 'in_shadow_y':in_shadow_y[s]=value; break;
+		case 'in_shadow_blur':in_shadow_blur[s]=value; break;
+		case 'opacity': opacity[s]=value; break;
+		case 'font_shadow_x':font_shadow_x[s]=value; break;
+		case 'font_shadow_y':font_shadow_y[s]=value; break;
+		case 'font_shadow_spread':font_shadow_spread[s]=value; break;
+		case 'transition_second':transition_second=value; break;
+	};changes();}});
+}
+//function for color  
+function color(name){
+	$('#'+name).miniColors({
+    change: function(hex, rgb) {
+		switch(name){
+		case 'font_color':font_color[s]=hex; break;	
+		case 'border_color':border_color[s]=hex; break;
+		case 'back_start':back_start[s]=hex; break;
+		case 'back_end':back_end[s]=hex; break;	
+		case 'outside_color':outside_color[s]=hex; break;
+		case 'in_color':in_color[s]=hex; break;
+		case 'font_shadow' : font_shadow[s]=hex; break;
+		}
+	 changes();
+}});
+}
+
+function make_changes_transfer(d){
+width[d]=width[0];
+height[d]=height[0];
+border[d]=border[0];
+border_size[d]=border_size[0];
+border_type[d]=border_type[0];
+border_color[d]=border_color[0];
+border_radius[d]=border_radius[0];
+val1[d]=val1[0];
+val2[d]=val2[0];
+val3[d]=val3[0];
+val4[d]=val4[0];
+font_color[d]=font_color[0];
+font_size[d]=font_size[0];
+font_name[d]=font_name[0];
+background[d]=background[0];
+back_start[d]=back_start[0];
+back_end[d]=back_end[0];
+box_shadow_out[d]=box_shadow_out[0];
+outside_color[d]=outside_color[0];
+out_shadow_x[d]=out_shadow_x[0];
+out_shadow_y[d]=out_shadow_y[0];
+out_shadow_blur[d]=out_shadow_blur[0];
+in_color[d]=in_color[0];
+in_shadow_x[d]=in_shadow_x[0];
+in_shadow_y[d]=in_shadow_y[0];
+in_shadow_blur[d]=in_shadow_blur[0];
+opacity[d]=opacity[0];
+text_shadow[d]=text_shadow[0];
+font_shadow[d]=font_shadow[0];
+font_shadow_x[d]=font_shadow_x[0];
+font_shadow_y[d]=font_shadow_y[0];
+font_shadow_spread[d]=font_shadow_spread[0];
+	
+}
+function make_slide_color_change(){
+		$('#width').slider('value',width[s]);
+		$('#height').slider('value',height[s]);
+		$('#border_size').slider('value',border_size[s]);
+		if(val1[s]==val2[s] && val2[s]==val3[s] && val3[s]==val4[s]){
+			$('#border_radius').slider('value',border_radius[s]);
+		}else{
+		$('.s1').val(val1[s]);
+		$('.s2').val(val2[s]);
+		$('.s3').val(val3[s]);
+		$('.s4').val(val4[s]);}
+		$('#font_size').slider('value',font_size[s]);
+		$('#out_shadow_x').slider('value',out_shadow_x[s]);
+		$('#out_shadow_y').slider('value',out_shadow_y[s]);
+		$('#out_shadow_blur').slider('value',out_shadow_blur[s]);
+		$('#in_shadow_x').slider('value',in_shadow_x[s]);
+		$('#in_shadow_y').slider('value',in_shadow_y[s]);
+		$('#in_shadow_blur').slider('value',in_shadow_blur[s]);
+		$('#font_shadow_x').slider('value',font_shadow_x[s]);
+		$('#font_shadow_y').slider('value',font_shadow_y[s]);
+		$('#font_shadow_spread').slider('value',font_shadow_spread[s]);
+		$('#opacity').slider('value',opacity[s]);
+		$('#font_color').miniColors('value',font_color[s]);
+		$('#border_color').miniColors('value',border_color[s]);
+		$('#back_start').miniColors('value',back_start[s]);
+		$('#back_end').miniColors('value',back_end[s]);
+		$('#outside_color').miniColors('value',outside_color[s]);
+		$('#in_color').miniColors('value',in_color[s]);
+		$('#font_shadow').miniColors('value',font_shadow[s]);
+		$('#font_name').val(font_name[s]);
+		$('#border_style').val(border_type[s]);
+		return false;
+}
+</script>
+</body>
+</html>
